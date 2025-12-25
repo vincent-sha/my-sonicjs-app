@@ -31,7 +31,7 @@ export default {
         maxLength: 500
       },
       content: {
-        type: 'richtext',
+        type: 'markdown',
         title: 'Content',
         required: true
       },
