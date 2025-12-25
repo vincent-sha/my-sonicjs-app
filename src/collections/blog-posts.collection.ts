@@ -34,7 +34,7 @@ export default {
         helpText: 'A short summary of the post'
       },
       content: {
-        type: 'quill',
+        type: 'richtext',
         title: 'Content',
         required: true
       },
