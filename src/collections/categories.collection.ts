@@ -1,7 +1,7 @@
 import type { CollectionConfig } from '@sonicjs-cms/core'
 
 export default {
-  name: 'categorys',
+  name: 'categories',
   displayName: 'Categories',
   description: 'Content categories used to group posts',
   icon: '🗂️',

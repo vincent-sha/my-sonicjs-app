@@ -31,7 +31,7 @@ export default {
         maxLength: 500
       },
       content: {
-        type: 'markdown',
+        type: 'richtext',
         title: 'Content',
         required: true
       },
@@ -48,7 +48,7 @@ export default {
         title: 'Categories',
         items: {
           type: 'reference',
-          collection: 'categorys'
+          collection: 'categories'
         }
       },
       featureimage: {
