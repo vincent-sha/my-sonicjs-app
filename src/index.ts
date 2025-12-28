@@ -9,17 +9,13 @@ import type { SonicJSConfig } from '@sonicjs-cms/core'
 
 // Import your collection configurations
 // Add new collections here after creating them in src/collections/
-import blogPostsCollection from './collections/blog-posts.collection'
-import categoriesCollection from './collections/categories.collection'
-import tagsCollection from './collections/tags.collection'    
+import blogPostsCollection from './collections/blog-posts.collection'   
 import postsCollection from './collections/posts.collection'
 
 // Register collections BEFORE creating the app
 // This ensures they are synced to the database on startup
 registerCollections([
   blogPostsCollection,
-  categoriesCollection,
-  tagsCollection,
   postsCollection
 ])
 

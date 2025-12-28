@@ -28,7 +28,12 @@ export default {
       description: {
         type: 'textarea',
         title: 'Description',
-        maxLength: 500
+        maxLength: 50
+      },
+      summary: {
+        type: 'textarea',
+        title: 'Summary',
+        maxLength: 200
       },
       content: {
         type: 'richtext',
@@ -37,19 +42,11 @@ export default {
       },
       tags: {
         type: 'array',
-        title: 'Tags',
-        items: {
-          type: 'reference',
-          collection: 'tags'
-        }
+        items: { type: 'string' }
       },
-      categories: {
-        type: 'array',
-        title: 'Categories',
-        items: {
-          type: 'reference',
-          collection: 'categories'
-        }
+      category: {
+        type: 'select',
+        enum: ['技术教程', '科技资讯', '科技潮品'],
       },
       featureimage: {
         type: 'media',
