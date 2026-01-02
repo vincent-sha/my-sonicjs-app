@@ -46,7 +46,7 @@ export default {
       },
       category: {
         type: 'select',
-        enum: ['技术教程', '科技资讯', '科技潮品'],
+        enum: ['tutorial', 'tech-news', 'tech-gadgets'],
       },
       featureimage: {
         type: 'media',
