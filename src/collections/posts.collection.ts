@@ -44,6 +44,17 @@ export default {
         type: 'array',
         items: { type: 'string' }
       },
+      series: {
+        type: 'array',
+        title: 'Series',
+        items: { type: 'string' },
+        helpText: 'Add one or more series names, e.g. ["Documentation"]'
+      },
+      series_order: {
+        type: 'number',
+        title: 'Series Order',
+        helpText: 'Define the article order within the series'
+      },
       category: {
         type: 'select',
         enum: ['tutorial', 'tech-news', 'tech-gadgets'],
